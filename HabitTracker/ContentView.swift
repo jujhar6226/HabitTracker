@@ -17,7 +17,7 @@ struct ContentView: View {
                 VStack(spacing: 20) {
                     
                     // Title
-                    Text("Habits")
+                    Text("HaboTack")
                         .font(.system(size: 34, weight: .bold))
                         .padding(.top, 10)
                     

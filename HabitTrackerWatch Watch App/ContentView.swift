@@ -35,7 +35,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Habits")
+            .navigationTitle("HaboTack")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
