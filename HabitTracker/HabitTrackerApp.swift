@@ -1,14 +1,12 @@
-//
-//  HabitTrackerApp.swift
-//  HabitTracker
-//
-//  Created by user290770 on 3/2/26.
-//
-
 import SwiftUI
 
 @main
 struct HabitTrackerApp: App {
+    
+    init() {
+        _ = WatchConnectivityManager.shared
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

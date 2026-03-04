@@ -6,14 +6,97 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A2A0AFD2F5681F300DE70E9 /* HabitTrackerWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A2A0AF32F5681F200DE70E9 /* HabitTrackerWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A543D7D2F5895B000247D1B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A543D7C2F5895B000247D1B /* WidgetKit.framework */; };
+		0A543D7F2F5895B000247D1B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A543D7E2F5895B000247D1B /* SwiftUI.framework */; };
+		0A543D8C2F5895B200247D1B /* HabitTrackerComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0A543D7A2F5895B000247D1B /* HabitTrackerComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A543D972F58A20500247D1B /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A543D962F58A20500247D1B /* Readme.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A2A0AFB2F5681F300DE70E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2A0AD92F567DF800DE70E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2A0AF22F5681F200DE70E9;
+			remoteInfo = "HabitTrackerWatch Watch App";
+		};
+		0A543D8A2F5895B200247D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2A0AD92F567DF800DE70E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A543D792F5895B000247D1B;
+			remoteInfo = HabitTrackerComplicationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A2A0B012F5681F300DE70E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A2A0AFD2F5681F300DE70E9 /* HabitTrackerWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A543D8D2F5895B200247D1B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A543D8C2F5895B200247D1B /* HabitTrackerComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A2A0AE12F567DF800DE70E9 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2A0AF32F5681F200DE70E9 /* HabitTrackerWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HabitTrackerWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A543D7A2F5895B000247D1B /* HabitTrackerComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HabitTrackerComplicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A543D7C2F5895B000247D1B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0A543D7E2F5895B000247D1B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0A543D962F58A20500247D1B /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0A543D902F5895B200247D1B /* Exceptions for "HabitTrackerComplication" folder in "HabitTrackerComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0A543D792F5895B000247D1B /* HabitTrackerComplicationExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0A2A0AE32F567DF800DE70E9 /* HabitTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HabitTracker;
+			sourceTree = "<group>";
+		};
+		0A2A0AF42F5681F200DE70E9 /* HabitTrackerWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HabitTrackerWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0A543D802F5895B000247D1B /* HabitTrackerComplication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0A543D902F5895B200247D1B /* Exceptions for "HabitTrackerComplication" folder in "HabitTrackerComplicationExtension" target */,
+			);
+			path = HabitTrackerComplication;
+			sourceTree = "<group>";
+		};
+		0A543D9A2F58AE9500247D1B /* Screnshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screnshots;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +109,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A2A0AF02F5681F200DE70E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A543D772F5895B000247D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A543D7F2F5895B000247D1B /* SwiftUI.framework in Frameworks */,
+				0A543D7D2F5895B000247D1B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0A2A0AD82F567DF800DE70E9 = {
 			isa = PBXGroup;
 			children = (
+				0A543D9A2F58AE9500247D1B /* Screnshots */,
+				0A543D962F58A20500247D1B /* Readme.txt */,
 				0A2A0AE32F567DF800DE70E9 /* HabitTracker */,
+				0A2A0AF42F5681F200DE70E9 /* HabitTrackerWatch Watch App */,
+				0A543D802F5895B000247D1B /* HabitTrackerComplication */,
+				0A543D7B2F5895B000247D1B /* Frameworks */,
 				0A2A0AE22F567DF800DE70E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +145,19 @@
 			isa = PBXGroup;
 			children = (
 				0A2A0AE12F567DF800DE70E9 /* HabitTracker.app */,
+				0A2A0AF32F5681F200DE70E9 /* HabitTrackerWatch Watch App.app */,
+				0A543D7A2F5895B000247D1B /* HabitTrackerComplicationExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0A543D7B2F5895B000247D1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A543D7C2F5895B000247D1B /* WidgetKit.framework */,
+				0A543D7E2F5895B000247D1B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,13 +170,16 @@
 				0A2A0ADD2F567DF800DE70E9 /* Sources */,
 				0A2A0ADE2F567DF800DE70E9 /* Frameworks */,
 				0A2A0ADF2F567DF800DE70E9 /* Resources */,
+				0A2A0B012F5681F300DE70E9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A2A0AFC2F5681F300DE70E9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0A2A0AE32F567DF800DE70E9 /* HabitTracker */,
+				0A543D9A2F58AE9500247D1B /* Screnshots */,
 			);
 			name = HabitTracker;
 			packageProductDependencies = (
@@ -69,6 +187,52 @@
 			productName = HabitTracker;
 			productReference = 0A2A0AE12F567DF800DE70E9 /* HabitTracker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0A2A0AF22F5681F200DE70E9 /* HabitTrackerWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2A0AFE2F5681F300DE70E9 /* Build configuration list for PBXNativeTarget "HabitTrackerWatch Watch App" */;
+			buildPhases = (
+				0A2A0AEF2F5681F200DE70E9 /* Sources */,
+				0A2A0AF02F5681F200DE70E9 /* Frameworks */,
+				0A2A0AF12F5681F200DE70E9 /* Resources */,
+				0A543D8D2F5895B200247D1B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A543D8B2F5895B200247D1B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0A2A0AF42F5681F200DE70E9 /* HabitTrackerWatch Watch App */,
+			);
+			name = "HabitTrackerWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "HabitTrackerWatch Watch App";
+			productReference = 0A2A0AF32F5681F200DE70E9 /* HabitTrackerWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A543D792F5895B000247D1B /* HabitTrackerComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A543D912F5895B200247D1B /* Build configuration list for PBXNativeTarget "HabitTrackerComplicationExtension" */;
+			buildPhases = (
+				0A543D762F5895B000247D1B /* Sources */,
+				0A543D772F5895B000247D1B /* Frameworks */,
+				0A543D782F5895B000247D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0A543D802F5895B000247D1B /* HabitTrackerComplication */,
+			);
+			name = HabitTrackerComplicationExtension;
+			packageProductDependencies = (
+			);
+			productName = HabitTrackerComplicationExtension;
+			productReference = 0A543D7A2F5895B000247D1B /* HabitTrackerComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +245,12 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					0A2A0AE02F567DF800DE70E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					0A2A0AF22F5681F200DE70E9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					0A543D792F5895B000247D1B = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +270,29 @@
 			projectRoot = "";
 			targets = (
 				0A2A0AE02F567DF800DE70E9 /* HabitTracker */,
+				0A2A0AF22F5681F200DE70E9 /* HabitTrackerWatch Watch App */,
+				0A543D792F5895B000247D1B /* HabitTrackerComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A2A0ADF2F567DF800DE70E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A543D972F58A20500247D1B /* Readme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2A0AF12F5681F200DE70E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A543D782F5895B000247D1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +309,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A2A0AEF2F5681F200DE70E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A543D762F5895B000247D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A2A0AFC2F5681F300DE70E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2A0AF22F5681F200DE70E9 /* HabitTrackerWatch Watch App */;
+			targetProxy = 0A2A0AFB2F5681F300DE70E9 /* PBXContainerItemProxy */;
+		};
+		0A543D8B2F5895B200247D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A543D792F5895B000247D1B /* HabitTrackerComplicationExtension */;
+			targetProxy = 0A543D8A2F5895B200247D1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A2A0AEA2F567DFA00DE70E9 /* Debug */ = {
@@ -246,6 +460,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -288,6 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -323,6 +539,140 @@
 			};
 			name = Release;
 		};
+		0A2A0AFF2F5681F300DE70E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HabitTrackerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Jujhar.HabitTracker;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jujhar.HabitTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		0A2A0B002F5681F300DE70E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HabitTrackerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Jujhar.HabitTracker;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jujhar.HabitTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		0A543D8E2F5895B200247D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitTrackerComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HabitTrackerComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jujhar.HabitTracker.watchkitapp.HabitTrackerComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		0A543D8F2F5895B200247D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H42DRG48WQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitTrackerComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HabitTrackerComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jujhar.HabitTracker.watchkitapp.HabitTrackerComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +690,24 @@
 			buildConfigurations = (
 				0A2A0AED2F567DFA00DE70E9 /* Debug */,
 				0A2A0AEE2F567DFA00DE70E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2A0AFE2F5681F300DE70E9 /* Build configuration list for PBXNativeTarget "HabitTrackerWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2A0AFF2F5681F300DE70E9 /* Debug */,
+				0A2A0B002F5681F300DE70E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A543D912F5895B200247D1B /* Build configuration list for PBXNativeTarget "HabitTrackerComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A543D8E2F5895B200247D1B /* Debug */,
+				0A543D8F2F5895B200247D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

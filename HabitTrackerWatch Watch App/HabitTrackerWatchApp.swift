@@ -1,17 +1,34 @@
-//
-//  HabitTrackerWatchApp.swift
-//  HabitTrackerWatch Watch App
-//
-//  Created by user290770 on 3/2/26.
-//
-
 import SwiftUI
+import WatchKit
 
 @main
-struct HabitTrackerWatch_Watch_AppApp: App {
+struct HabitTrackerWatchApp: App {
+    
+    @WKExtensionDelegateAdaptor(ExtensionDelegate.self)
+    var extensionDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }
+    }
+}
+
+class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    
+    func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
+        
+        for task in backgroundTasks {
+            
+            if let refreshTask = task as? WKApplicationRefreshBackgroundTask {
+                
+                print("⌚ Background refresh executed")
+                
+                refreshTask.setTaskCompletedWithSnapshot(false)
+                
+            } else {
+                task.setTaskCompletedWithSnapshot(false)
+            }
         }
     }
 }
